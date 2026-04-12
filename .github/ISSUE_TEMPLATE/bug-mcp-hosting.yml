@@ -1,0 +1,35 @@
+name: "Bug — MCP Hosting"
+description: Report a bug or unexpected behavior in MCP Hosting.
+title: "[MCP Hosting] "
+labels: ["bug", "product:mcp-hosting"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. The more detail you include, the faster we can fix it.
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, step by step?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Which MCP server, client (Claude Desktop, Cursor, etc.), logs, screenshots — anything that helps.
+    validations:
+      required: false

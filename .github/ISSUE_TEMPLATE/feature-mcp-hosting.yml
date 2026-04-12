@@ -1,0 +1,33 @@
+name: "Feature — MCP Hosting"
+description: Suggest a feature or improvement for MCP Hosting.
+title: "[MCP Hosting] "
+labels: ["enhancement", "product:mcp-hosting"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing an idea! A short description of the problem you're trying to solve is often more useful than a fully designed feature.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested solution
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+    validations:
+      required: false
