@@ -1,0 +1,61 @@
+name: "Bug — vew browser"
+description: Report a bug or unexpected behavior in vew.
+title: "[vew] "
+labels: ["bug", "product:vew-browser"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. The more detail you include, the faster we can fix it.
+  - type: input
+    id: version
+    attributes:
+      label: vew version
+      description: Shown in the About panel — the (i) button in the toolbar, or "About vew" in the command palette.
+      placeholder: "0.2.6"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows (x64)
+        - Windows (arm64)
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Linux (deb)
+        - Linux (rpm)
+        - Linux (other)
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, step by step?
+      placeholder: |
+        1. Open vew
+        2. Go to `...`
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: The page or site involved, screenshots, logs, or anything else that helps.
+    validations:
+      required: false

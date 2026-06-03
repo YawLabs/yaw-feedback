@@ -1,7 +1,7 @@
-name: "Feature — MCP Hosting"
-description: Suggest a feature or improvement for MCP Hosting.
-title: "[MCP Hosting] "
-labels: ["enhancement", "product:mcp-hosting"]
+name: "Feature — vew browser"
+description: Suggest a feature or improvement for vew.
+title: "[vew] "
+labels: ["enhancement", "product:vew-browser"]
 body:
   - type: markdown
     attributes:
@@ -11,12 +11,14 @@ body:
     id: problem
     attributes:
       label: What problem are you trying to solve?
+      description: What are you trying to do, and what's getting in the way today?
     validations:
       required: true
   - type: textarea
     id: suggestion
     attributes:
       label: Suggested solution
+      description: If you have an idea for how this could work, describe it here.
     validations:
       required: false
   - type: textarea
@@ -29,5 +31,6 @@ body:
     id: context
     attributes:
       label: Additional context
+      description: Screenshots, links to similar features in other browsers, etc.
     validations:
       required: false
